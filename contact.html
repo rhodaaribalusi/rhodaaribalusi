@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the Computing Department website project by Rhoda Aribalusi.">
+  <title>Contact | Computing Department</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">C<span>.</span></span>
+      <span>Computing<span class="brand-small">DEPARTMENT</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programmes.html">Programmes</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h1>We'd love to <span>hear from you.</span></h1>
+      <p>Have a question or need more information? Send us a message.</p>
+      <div class="breadcrumbs"><a href="index.html">Home</a> / Contact</div>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-intro">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Every great idea starts with a <span>conversation.</span></h2>
+        <p>
+          Use the contact details below to reach out with questions,
+          suggestions or enquiries about this Computing Department website.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉</div>
+          <div>
+            <h3>Email address</h3>
+            <a href="mailto:rhodaaribalusi@gmail.com">rhodaaribalusi@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✦</div>
+          <div>
+            <h3>Website project</h3>
+            <p>Computing Department Website</p>
+          </div>
+        </div>
+
+        <div class="contact-signature">
+          <span class="signature-mark">R.</span>
+          <div>
+            <strong>Rhoda Aribalusi</strong>
+            <p>Website project contact</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <p class="eyebrow">SEND A MESSAGE</p>
+        <h2>How can we help?</h2>
+
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name"
+          placeholder="Enter your full name" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email"
+          placeholder="you@example.com" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject"
+          placeholder="What is your message about?" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5"
+          placeholder="Write your message here..." required></textarea>
+
+        <button class="button button-primary submit-button" type="submit">
+          Prepare Email ↗
+        </button>
+        <p class="form-note">
+          Your message will open in your email application for you to review and send.
+        </p>
+        <p id="formFeedback" class="form-feedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">Computing Department<span>.</span></a>
+    <p>Learning today. Shaping tomorrow.</p>
+    <p>Website project by Rhoda Aribalusi · © <span class="current-year">2026</span></p>
+  </footer>
+</body>
+</html>
